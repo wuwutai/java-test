@@ -31,7 +31,7 @@ public class ThreadTest {
     public static void main(String[] args) {
 
         Runtime.getRuntime().addShutdownHook(new Thread(
-                ()-> { shutdown(); }
+                ()->  shutdown()
         ));
 
         System.out.println("主线程执行开始");
